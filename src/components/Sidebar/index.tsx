@@ -1,3 +1,4 @@
+import { Logo } from '@/components/Sidebar/Logo'
 import {
   BarChart,
   CheckSquare,
@@ -9,9 +10,8 @@ import {
   SquareStack,
   Users,
 } from 'lucide-react'
-
-import { Logo } from '@/components/Sidebar/Logo'
 import { NavItem } from './NavItem'
+import { Profile } from './Profile'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
 
 export function Sidebar() {
@@ -43,6 +43,10 @@ export function Sidebar() {
         </nav>
 
         <UsedSpaceWidget />
+
+        <div className="h-px bg-zinc-200" />
+
+        <Profile />
       </div>
     </aside>
   )
